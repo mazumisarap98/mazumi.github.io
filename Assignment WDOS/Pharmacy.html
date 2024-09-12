@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gurdian Care Medical Center - Pharmacy</title>
+    <link rel="stylesheet" href="pharmacy.css">
+    <link rel="icon" href="favicon_io/favicon.ico">
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="LOGO.webp" alt="Hospital Logo" class="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="AboutUs&ContactUs.html">About Us</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="Doctors.html">Doctors</a></li>
+                <li><a href="Reservations.html">Consulting Reservations</a></li>
+                <li><a href="Pharmacy.html">Pharmacy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="pharmacy">
+            <h1>Pharmacy Order Form</h1>
+            <form class="pharmacy-form">
+                <div class="form-group">
+                    <label for="medicine">Select the medicine:</label>
+                    <select id="medicine" name="medicine" required>
+                        <option value="">Select a medicine</option>
+                        <option value="medicine1">Aspirin - Used for pain relief, to reduce inflammation, and as a blood thinner.</option>
+                        <option value="medicine1">Acetaminophen (Tylenol) - Used for pain relief and to reduce fever</option>
+                        <option value="medicine1">Ibuprofen (Advil, Motrin) - Used for pain relief, fever reduction, and to reduce inflammation.</option>
+                        <option value="medicine1">Diphenhydramine (Benadryl) - An antihistamine used for allergy relief and to help with sleep.</option>
+                        <option value="medicine1">Loratadine (Claritin) - An antihistamine used for allergy relief.</option>
+                        <option value="medicine1">Omeprazole (Prilosec) - Used to treat heartburn and acid reflux.</option>
+                        <option value="medicine2">Loperamide (Imodium) - Used to treat diarrhea.</option>
+                        <option value="medicine2">Pseudoephedrine (Sudafed) - A decongestant used to relieve nasal congestion.</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <input type="number" id="quantity" name="quantity" min="1" value="1" required>
+                </div>
+                <div class="form-group">
+                    <label for="prescription">Prescription Upload:</label>
+                    <input type="file" id="prescription" name="prescription" accept=".jpg,.jpeg,.png,.pdf" required>
+                </div>
+                <div class="form-group">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob" name="dob" required>
+                </div>
+                <div class="form-group">
+                    <label for="contactNumber">Contact Number:</label>
+                    <input type="tel" id="contactNumber" name="contactNumber" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address" required>
+                </div>
+                <div class="form-group">
+                    <label>Payment Method:</label>
+                    <div class="radio-group">
+                        <input type="radio" id="cod" name="cash on delivery" value="cod" required>
+                        <label for="cash on delivery">Cash on delivery</label>
+                        <input type="radio" id="card" name="card" value="card">
+                        <label for="card">Card</label>
+                        <!-- Radio buttons allow users to select one option from a group of choices(YOUTUBE-TUTORIAL) -->
+                    </div>
+                </div>
+                <div class="form-group buttons">
+                    <button type="submit" class="submit-btn">Submit</button>
+                    <button type="reset" class="clear-btn">Clear</button>
+                </div>
+            </form>
+            <div class="emergency-info">
+                <p>Contact: (123) 456-7890</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-column">
+        <h3>Location</h3>
+        <p>GuardianCare Medical Center</p>
+        <p>9/01 Main Street, Colombo 01,</p>
+        <p> Western Province, Sri Lanka</p>
+    </div>
+
+    <div class="footer-column">
+        <h3>Contact Us</h3>
+        <p>Email: contact@guardiancare.com</p>
+        <p>Phone: +123-456-7890</p>
+        <p>Emergency Hotline: 1800-123-456</p>
+    </div>
+
+    <div class="footer-column">
+        <h3>Branches</h3>
+        <p>Main Branch - Colombo</p>
+        <p>R&D Center - Kandy</p>
+        <p>Medical Branch - Jaffna</p>
+    </div>
+
+    <div class="footer-column">
+        <h3>Awards</h3>
+        <p>Best Medical Center - 2022</p>
+        <p>Excellence in Patient Care - 2021</p>
+        <p>Innovative Healthcare Award - 2020</p>
+    </div>
+</footer>
+
+</body>
+</html>
